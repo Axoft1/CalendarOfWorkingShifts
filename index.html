@@ -1,51 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendar of working shifts</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <div class="conteiner">
-        <div class="navbar">
-            <a href="#" class="heading">
-                <div class="heading-logo"><h1>К</h1></div>
-                <h1 class="heading-logo1">Календарь</h1></a>
-            <nav class="nav-list">
-                <button class="nav-item active" type="button">Inbox</button>
-                <button class="nav-item" type="button">Inbox</button>
-            </nav>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conteiner container-x1 ">
+      <div class="navbar">
+        <a href="#" class="heading">
+          <div class="heading-logo"><h1 class="h-logo">К</h1></div>
+          <h1 class="heading-logo1">Календарь</h1></a
+        >
+        <nav class="nav-list">
+          <!-- <button class="nav-item active" type="button">Inbox</button>
+          <button class="nav-item" type="button">Inbox</button> -->
+        </nav>
+      </div>
+      <div class="form_menu">
+        <h2>Составь свой график</h2>
+        <div
+          class="form_radio_group btn-group"
+          role="group"
+          aria-label="Basic example"
+        >
+         
         </div>
-        <div class="form_menu    ">
-            <h1>Выбери день</h1>
-            <div class="form_radio_group">
-                <div class="form_radio_group-item">
-                    <input id="radio-1" type="radio" name="radio" value="1" checked>
-                    <label for="radio-1">Билеты</label>
-                </div>
-                <div class="form_radio_group-item">
-                    <input id="radio-2" type="radio" name="radio" value="2">
-                    <label for="radio-2">Выходные</label>
-                </div>
-                <div class="form_radio_group-item">
-                    <input id="radio-3" type="radio" name="radio" value="3">
-                    <label for="radio-3">Планы</label>
-                </div>
-            </div>
+      </div>
+      <div class="container">
+        <div class="row row-cols-auto">
+          <div class="col-sm">
+            В день
+            <select  
+            id="selectWorkDays"
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option selected value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            </select>
+          </div>
+
+          <div class="col-sm">
+            Выходной
+            <select
+                id="selectDayOff"
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+            <option value="0">0</option>
+              <option value="1">1</option>
+              <option selected value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            </select>
+          </div>
+          <div class="col-sm">
+            В ночь
+            <select
+            id="selectWorkNight"
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option selected value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            </select>
+          </div>
+          <div class="col-sm">
+            Выходной
+            <select
+            id="selectDayOffd"
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option selected value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            </select>
+          </div>
+          <div class="col-sm">
+            Первый
+            <select
+            id="selectDay"
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+            </select>
+          </div>
+          <button id="btnWork" type="button" class="btn btn-outline-info">
+            Рассчитать смены
+          </button>
         </div>
-        
-        <div class="calendar_contener">
-          <button id="btnPrev" type="button">Предыдущий</button>
-          <button id="btnNext" type="button">Следующий</button>
-          <div id="calId"></div>
-        </div>
+      </div>
+      <div class="calendar_contener">
+        <button id="btnPrev" type="button" class="btn btn-info">
+          Предыдущий
+        </button>
+        <button id="btnNext" type="button" class="btn btn-info">
+          Следующий
+        </button>
+
+        <div id="calId"></div>
+      </div>
     </div>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

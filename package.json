@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.2.0",
     "node-sass": "^7.0.1"
   }
 }

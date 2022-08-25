@@ -6,7 +6,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   /* font-family: sans-serif; */
-  background: #28283b;
+  background: #fdfdfd;
   /* color: #444; */
 }
 *,
@@ -17,11 +17,11 @@ body {
 
 
 .conteiner {
-  background-color: #7A7585;
+  
+  background-color: #83fbff86;
   max-width: 802px;
-  /* display: flex; */
   margin: auto;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
  }
 
@@ -31,7 +31,7 @@ body {
   width: 802px;
   display: flex;
   align-items: center;
-  background-color: black;
+  background-color: rgb(7, 164, 192);
   height: 72px; }
 
 .heading {
@@ -44,14 +44,17 @@ body {
 .heading-logo {
   margin: 24px;
   display: flex;
-  background-color: #9590A0;
-  color: black;
+  background-color: #ffffff;
+  color: rgb(7, 7, 7);
   width: 48px;
   height: 48px;
   border-radius: 10%;
   align-items: center;
-  justify-content: center; }
-
+  justify-content: center;
+ }
+h1{
+  color: rgb(7, 4, 0);
+ }
 button {
   cursor: pointer; }
 
@@ -84,30 +87,31 @@ img {
   height: auto;
   margin-top: 3%; }
 
-h1 {
+h2 {
+  margin-left: 50px;
   overflow: hidden;
-  color: #bcc7cf; }
+  color: #01121f; }
 
 .form_radio_group {
   display: flex;
   overflow: hidden;
   border-radius: 10px; }
 
-.form_radio_group-item {
+/* .form_radio_group-item {
   width: 150px;
-  background-color: #4E4957; }
+  background-color: #4E4957; } */
 
-.form_radio_group input[type=radio] {
-  display: none; }
+/* .form_radio_group input[type=radio] {
+  display: none; } */
 
-.form_radio_group label {
+/* .form_radio_group label {
   color: #bcc7cf;
   display: flex;
   cursor: pointer;
   padding: 0px 15px;
   line-height: 48px;
   border-right: none;
-  user-select: none; }
+  user-select: none; } */
 
 .form_radio_group .form_radio_group-item:first-child label {
   /* border-radius: 10px 0 0 10px; */ }
@@ -116,19 +120,19 @@ h1 {
   /* border-radius: 0 10px 10px 0; */ }
 
 /* Checked */
-.form_radio_group input[type=radio]:checked + label {
+/* .form_radio_group input[type=radio]:checked + label {
   background: #7A7585;
   border-radius: 10px;
   color: #abb7be;
   width: 80%;
-  height: 90%; }
+  height: 90%; } */
 
-.form_radio_group label:hover {
+/* .form_radio_group label:hover {
   background-color: #7A7585;
   color: #bcc7cf;
   border-radius: 10px;
   width: 80%;
-  height: 90%; }
+  height: 90%; } */
 
 /* Calendar */
 
@@ -146,7 +150,7 @@ table {
   border: 1px solid #dcdcff;
   border-radius: 3px;
   border-collapse: collapse;
-  color: #444;
+  color: rgb(0, 2, 3);
 }
 td {
   height: 48px;
@@ -160,8 +164,8 @@ td.not-current {
   color: #c0c0c0;
 }
 td.today {
-  font-weight: 700;
-  color: #28283b;
+  font-weight: bold;
+  color: #1f08ee;
   font-size: 1.5em;
 }
 thead td {
@@ -170,38 +174,36 @@ thead td {
   text-transform: uppercase;
   font-size: 1.5em;
 }
-#btnPrev {
-  float: left;
-  margin-bottom: 20px;
-}
-#btnPrev:before {
-  content: '\f104';
-  font-family: FontAwesome;
-  padding-right: 4px;
-}
 #btnNext {
+  margin-top: 10px;
+  margin-right: 30px;
   float: right;
   margin-bottom: 20px;
 }
-#btnNext:after {
-  content: '\f105';
-  font-family: FontAwesome;
-  padding-left: 4px;
+#btnPrev {
+  margin-left: 30px;
+  margin-top: 10px;
+  float: left;
+  margin-bottom: 20px;
 }
-#btnPrev,
-#btnNext {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 1em;
-  color: #c0c0c0;
-  cursor: pointer;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
+#btnWork {
+  margin: 10px;
+  /* float: right; */
 }
-#btnPrev:hover,
-#btnNext:hover {
-  color: #28283b;
+
+.weeks{
   font-weight: bold;
+}
+
+.dayOff{
+  background: #ffffff3a;
+}
+.workDay{
+  background: #425eda;
+}
+.workNigth{
+  background: #6b638a;
+}
+.lastManth{
+  color: #c0c0c0;
 }
