@@ -136,7 +136,7 @@
             </select>
           </div>
           <div class="col-sm">
-            Первый
+            <h6>Начало</h6>
             <select
             id="selectDay"
               class="form-select form-select-sm"
@@ -156,11 +156,37 @@
         <button id="btnNext" type="button" class="btn btn-info">
           Следующий
         </button>
+        
 
         <div id="calId"></div>
+      
       </div>
+
+
+              <!-- Посмотреть какой день будет в будущем -->
+
+      <div class="container">
+        <div class="row row-cols-auto">
+<h5>Узнать как вы работаете в этот день</h5>
+          <input type="date" class="form-control" id="dateInput" name="date" placeholder="Дата" required>
+         
+          <div class="col-sm">
+            <div id="result"></div>
+            </select>
+          </div>
+          
+
+          
+          </div>
+          
+        </div>
+      </div>
+      
     </div>
 
     <script src="script.js"></script>
+
+
+    
   </body>
 </html>
